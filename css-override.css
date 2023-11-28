@@ -1,7 +1,17 @@
 :root {
   --blue: #00072D;
   --red: #0E6BA8;
-  --main: rgb(20, 21, 27);
+  --main: rgb(0, 26, 173);
+}
+
+.alert-link {
+  color: #ffffff;
+  background-color: #0468ff;
+  border-color: #000000;
+}
+.alert-link:hover {
+  color: #b6d4fe;
+  text-decoration: none;
 }
 
 body {
@@ -200,19 +210,20 @@ footer {
 }
 
 body {
-  transition: opacity 0.8s ease; /* Add a smooth transition effect */
+  transition: background-color 0.5s ease; /* Add a smooth transition effect */
 }
 
 .computer {
   width: auto;
   max-height: 600px;
   height: auto;
+  padding: 30px;
 }
 
 .project-box {
   border-radius: 20px;
   box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-  height: 800px;
+  padding-bottom: 30px;
 }
 
 .blurred {
@@ -220,9 +231,49 @@ body {
 }
 
 .alert {
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .alert p {
   margin-bottom: 0 !important;
+}
+
+.social-icon {
+  max-width: 70px;
+}
+
+.shrinking {
+  display: inline;
+}
+
+.card-title {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.card-description {
+  padding-bottom: 10px;
+}
+
+.card-date {
+  padding-top: 15px;
+}
+
+.small {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.no-decor {
+  text-decoration: none;
+}
+
+.curved {
+  border-radius: 25px;
+}
+
+.grid-box {
+  padding: 10px;
 }
