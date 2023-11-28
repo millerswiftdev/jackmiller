@@ -1,6 +1,11 @@
 :root {
   --blue: #00072D;
-  --red: #0E6BA8; 
+  --red: #0E6BA8;
+  --main: rgb(20, 21, 27);
+}
+
+body {
+  background-color: rgb(228, 228, 228);
 }
 
 html, body {
@@ -17,7 +22,7 @@ html {
     }
     
 .navbar-toggler-icon::before, .navbar-toggler-icon::after, .navbar-toggler-icon {
-    background-color: #0f3377 !important;
+    background-color: var(--main) !important;
 }
 
 .text-black {
@@ -183,4 +188,41 @@ footer {
   text-shadow:  -3px -3px 7px #ffffffb2,
   3px 3px 7px rgba(159, 166, 177, 0.945);
   color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.height-filler {
+  height: 5vh;
+}
+
+.depth:hover + body {
+  background-color: black; /* Change the background color when button is hovered */
+}
+
+body {
+  transition: opacity 0.8s ease; /* Add a smooth transition effect */
+}
+
+.computer {
+  width: auto;
+  max-height: 600px;
+  height: auto;
+}
+
+.project-box {
+  border-radius: 20px;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  height: 800px;
+}
+
+.blurred {
+  filter: blur(10px);
+}
+
+.alert {
+  border-radius: 30px;
+}
+
+.alert p {
+  margin-bottom: 0 !important;
 }

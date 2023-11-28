@@ -22,10 +22,10 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link contact" aria-current="page" href="/index.html">HOME</a>
+                <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/projects/index.html">PROJECTS</a>
+                <a class="nav-link contact" href="/projects/index.html">PROJECTS</a>
               </li>
               <!--
               <li class="nav-item">
@@ -161,64 +161,29 @@ try {
 <body>
 <!--START OF BODY CONTENT-->
 
+<div class="container">
+<div class="alert alert-primary" role="alert">
+  <p style="display: inline-block;" class="emoji">
+    🤫
+  </p>
+  <p style="display: inline-block;">Projects are coming soon. Stay tuned for my first project launching in December 2023.</p>
+</div>
 
 
-<div class="container text-center" style="max-width: 100%;">
-    
-
-  <!--Spacer-->
-  <div class="row height-filler"></div>
 
 
-
-    <div class="row">
-      <div class="col-sm-12 col-lg-4">
-      </div>
-      <div class="col-sm-12 col-lg-4">
-        <h2 class="display-1">Hi, I'm Jack</h2>
-      </div>
-      <div class="col-sm-12 col-lg-4">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-lg-4">
-      </div>
-      <div class="col-sm-12 col-lg-4">
-        <h2></h2>
-        <script>
-          function changeBackgroundColor(isHovered) {
-            document.body.style.backgroundColor = isHovered ? 'black' : ''; // Change the background color when button is hovered
-          }
-        </script>
-        <a href="" class="depth" onmouseover="changeBackgroundColor(true)" onmouseout="changeBackgroundColor(false)"><h2 class="depth display-1">Designer</h2></a>
-        <h2>&</h2>
-        <h1 class="code display-1">Developer</h1>
-      </div>
-      <div class="col-sm-12 col-lg-4">
-      </div>
-    </div>
-    <script>
-      window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
-
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('body').style.opacity = 1
-})
-    </script>
-    <div class="row">
-      <span onclick="transitionToPage('/projects')"><a  class="nav-link"><h2 class="">View Projects</h2></a></span>
-      <a href="/contact/" class="nav-link"><h2 class="">Contact Me</h2></a>
-    </div>
-    
-      
-      
+<div class="row">
+  <div class="col-lg-3 col-12"></div>
+  <div class="col-lg-6 col-12 project-box text-center blurred">
+    <img class="computer img-fluid" src="gotcha.png" alt="">
+    <h2>Gotcha! Gonna have to wait a little longer.</h2>
   </div>
+  <div class="col-lg-3 col-12"></div>
+</div>
 
 
+<p>Device Mockup created from <a href="https://deviceframes.com/templates/macbook-pro-m1-14">MacBook Pro mockups</a></p>
+</div>
 <!--END OF BODY-->
 </body>
 <script type="text/javascript">
