@@ -171,21 +171,21 @@ video {
     /* When the container is hovered, apply changes to the explore div */
     .explore-container1:hover .explore {
         background-color: white;
-        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
         box-shadow: #e20000 0px 0px 400px; /* Optional: add a shadow */
         transition-delay:.6s;
     }
     .explore-container2:hover .explore {
         background-color: white;
-        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
         box-shadow: #5500ff 0px 0px 400px; /* Optional: add a shadow */
         transition-delay:.6s;
     }
     .explore-container3:hover .explore {
         background-color: white;
-        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
         box-shadow: #00569c 0px 0px 400px; /* Optional: add a shadow */
         transition-delay:.6s;
