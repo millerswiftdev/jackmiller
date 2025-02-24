@@ -1,61 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
 
 @font-face {
-    font-family: spartan;
-    src: url(font/LeagueSpartan-Bold.otf);
+    font-family: belgiano;
+    src: url(font/belgiano.otf);
   }
 
-@font-face {
-    font-family: dina;
-    src: url(font/dina10px.ttf);
-}
-
-@font-face {
-    font-family: emoji;
-    src: url(font/AppleColorEmoji.ttc);
-}
-
-.emoji {
-    font-family: 'emoji', sans-serif;
-}
-
 h1, h2, h3, h4, h5, h6, .rotated-text {
-    font-family: 'Titillium Web', sans-serif !important;
-    font-weight: 700;
-    color: rgb(20, 21, 27);
+    font-family: 'belgiano', sans-serif !important;
+}
+.video-h3 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400;
 }
 
 .nav-link {
     font-size: 25px;
-    color: #b1b1b1;
-    font-family: 'inter', sans-serif;
-    font-weight: 600;
+    color: #c1c1c1 !important;
+    transition: 0.9s cubic-bezier(0.5, 0.71, 0, 1);
 }
 .nav-link:hover
  {
-    text-shadow:  -3px -3px 7px #ffffffb2,
-    3px 3px 7px rgba(159, 166, 177, 0.945);
-    color: rgb(255, 255, 255);
- }
-
- .navbar-toggler:hover
- {
-    text-shadow:  -3px -3px 7px #ffffffb2,
-    3px 3px 7px rgba(159, 166, 177, 0.945);
-    color: rgb(255, 255, 255);
+    text-shadow: #ffffff 0px 0px 30px;
  }
 
  .contact {
-    color: rgb(20, 21, 27);
- }
-
- .contact:hover
- {
-    text-shadow:  -3px -3px 7px #ffffffb2,
-    3px 3px 7px rgba(159, 166, 177, 0.945);
-    color: #878787;
+    color: #fd0001 !important;
  }
 
 .phrase {
@@ -81,7 +56,7 @@ p {
 }
 .contactme:hover {
     text-decoration: none !important;
-    color: var(--red) !important;
+    color: #fd0001 !important;
 }
 
 .about-headline {
@@ -115,53 +90,4 @@ p {
 
 .page-heading {
 
-}
-
-.code {
-    font-family: 'dina', sans-serif !important;
-}
-
-.depth {
-    font-family: 'inter', sans-serif !important;
-    font-weight: 700;
-}
-
-.navbar-brand {
-    color: black;
-    margin-bottom: .35rem !important;
-}
-.navbar-brand:hover {
-    color: black;
-}
-
-.inter {
-    font-family: 'inter', sans-serif !important;
-}
-
-.card-date {
-    font-family: 'inter', sans-serif !important;
-    font-weight: 400;
-}
-
-.card-description {
-    font-family: 'inter', sans-serif !important;
-    font-weight: 400;
-}
-
-.contactme {
-    display: inline-block;
-}
-
-@media screen and (max-width: 1468px) {
-    .contactme {
-        display: none !important
-    }
-}
-
-.font-600 {
-    font-weight: 600;
-}
-
-.font-500 {
-    font-weight: 500;
 }

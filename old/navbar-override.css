@@ -324,19 +324,4 @@
     transform-origin: right;
     transform: translateY(-0.05rem) translateX(1.3rem) rotate(-45deg);
   }
-
-  .social-container {
-    display: flex;
-  }
-
-  .navBar {
-    max-height: 80px;
-  }
-
-  .navbar-brand {
-    width: 60px !important;
-  }
   
-  .navbar {
-    background-color: black;
-  }
