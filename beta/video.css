@@ -1,0 +1,203 @@
+.video-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 86px);
+    background-color: black;
+}
+
+body {
+    max-height: 100% !important;
+    overflow: hidden;
+}
+
+.video-content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    position: absolute;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: -100;
+    filter: brightness(41%) saturate(113%);
+}
+
+.vertical-center {
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    align-content: center;
+}
+
+.welcome-links {
+    padding-top: 20px;
+}
+
+.welcome-links {
+    margin-top: 20px;
+}
+
+.video-h3 {
+    z-index: 99;
+    position: absolute;  /* Absolutely position the text */
+    top: 50%;  /* Center it vertically */
+    left: 50%;  /* Center it horizontally */
+    transform: translate(-50%, -50%);  /* Adjust to perfectly center */
+    font-size: 4em;  /* Normal font size */
+    transition: color 0.3s ease, font-size 1s ease; /* Smooth transition for color and size */
+    pointer-events: none;  
+
+  
+    background: linear-gradient(90deg, #000000, #0c2ab1); /* Horizontal gold gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 205px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 
+                0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Inter", sans-serif !important;
+
+}
+
+.video-h3::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 205px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    z-index: -1;
+}
+
+.video-h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore {
+    height: 50px;
+    width: 100%;
+    transition: 0.1s cubic-bezier(0.92, 0.71, 0, 1);
+    background-position: center;
+    margin-top: 0px !important;
+    padding: 0 !important;
+    background-size: cover;
+    z-index: 10;
+}
+
+
+
+
+.explore-container1 {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    height: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
+    transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
+    
+}
+.explore-container2 {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    height: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
+    transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
+    
+}
+.explore-container3 {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    height: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
+    transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
+    
+}
+@media screen and (max-width: 1000px) {
+.explore-container {
+    z-index: 10;
+}
+}
+
+.image-expand {
+    height: .0001px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 50;
+    transition: 0.9s cubic-bezier(0.5, 0.71, 0, 1);
+}
+
+@media screen and (min-height: 600px) {
+
+@media screen and (min-width: 1000px) {
+
+    /* When the container is hovered, increase the size of the text and change color */
+    .explore-container:hover .video-h3 {
+    
+        font-size: 3em;  /* Increase font size */
+        transition-delay:.1s;
+    }
+
+    /* When the container is hovered, apply changes to the explore div */
+    .explore-container1:hover .explore {
+        background-color: white;
+        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        /* height: 200px; */
+        box-shadow: #e20000 0px 0px 400px; /* Optional: add a shadow */
+        transition-delay:.6s;
+    }
+    .explore-container2:hover .explore {
+        background-color: white;
+        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        /* height: 200px; */
+        box-shadow: #5500ff 0px 0px 400px; /* Optional: add a shadow */
+        transition-delay:.6s;
+    }
+    .explore-container3:hover .explore {
+        background-color: white;
+        transform: scaleY(2.5); /* Optional: vertical scaling effect */
+        /* height: 200px; */
+        box-shadow: #00569c 0px 0px 400px; /* Optional: add a shadow */
+        transition-delay:.6s;
+    }
+
+    .explore-container:hover .image-expand {
+        height: calc(100vh/3);
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        transition-delay:.6s;
+    }
+
+}
+}
