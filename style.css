@@ -180,3 +180,8 @@ body {
   z-index: 9999;
 }
 
+.nav-link {
+  padding-left: .7rem !important;
+  padding-right: .7rem !important;
+}
+
