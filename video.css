@@ -173,7 +173,7 @@ video {
         background-color: white;
         transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
-        box-shadow: #e20000 0px 0px 400px; /* Optional: add a shadow */
+        box-shadow: #0084e2 0px 0px 400px; /* Optional: add a shadow */
         transition-delay:.2s;
     }
     .explore-container2:hover .explore {
