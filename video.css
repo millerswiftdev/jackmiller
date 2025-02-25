@@ -23,14 +23,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-video {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    object-fit: cover;
-    z-index: -100;
-    filter: brightness(41%) saturate(113%);
-}
 
 .vertical-center {
     align-items: center;

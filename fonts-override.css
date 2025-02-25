@@ -11,9 +11,24 @@ h1, h2, h3, h4, h5, h6, .rotated-text {
     color: white;
 }
 
+
+p {
+    color: rgb(173, 173, 173);
+}
+
+a {
+    color: rgb(0, 134, 217);
+    font-weight: 500;
+}
+
 h1 {
     font-weight: 800;
 }
+
+h2 {
+    font-weight: 700;
+}
+
 .video-h3 {
     font-family: 'Inter', sans-serif !important;
     font-weight: 600;

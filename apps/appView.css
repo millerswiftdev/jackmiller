@@ -1,0 +1,106 @@
+.app-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vh; /* Adjust as needed */
+}
+
+.centered-div > * {
+    text-align: center;
+}
+
+.app-title {
+    font-size: 10vw;
+}
+
+.obj-model {
+    width: auto;
+    height: 100vh;
+    margin-top: 0vw;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .obj-model {
+        height: 100vh;
+        margin-top: -10vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-title {
+        margin-top: -6.5vh;
+        font-size: 12vw;
+    }
+    .obj-model {
+        height: 30vh;
+        margin-top: 4vh;
+        margin-bottom: 0px;
+    }
+}
+
+body {
+    max-height: none;
+    overflow: visible;
+}
+
+.container {
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.full-width-image {
+    background: url('ssc-crowd.webp') no-repeat center center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.846); /* Dark tint */
+    background-blend-mode: darken;
+}
+
+.img-ssc {
+    max-width: 50%;
+    margin-bottom: 20px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 60%; /* Adjust as needed */
+    }
+}
+@media (min-width: 777px) {
+    .container {
+        max-width: 60%; /* Adjust as needed */
+    }
+
+    .img-ssc {
+        max-width: 50%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        height: auto;
+        margin-left: 50%;
+        margin-right: auto;
+    }
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 0, 0.313);
+    color: black;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px); /* Adjust blur intensity as needed */
+}
+
+a

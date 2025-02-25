@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../video.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../fonts-override.css">
-    <link rel="stylesheet" href="../appView.css">
+    <link rel="stylesheet" href="appView.css">
 
     <script>
         window.transitionToPage = function (href) {
@@ -66,9 +66,47 @@
     </div>
     <model-viewer class="obj-model"
         alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-        src="untitled2.glb" ar environment-image="spruit_sunrise_1k_HDR.hdr"
+        src="island.glb"  field-of-view="50deg" ar environment-image="spruit_sunrise_1k_HDR.hdr"
         shadow-intensity="1"
         touch-action="pan-y" auto-rotate></model-viewer>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <h2 style="text-align: center; padding-bottom: 15px;">Watch Preview</h2>
+                                <video class="embed-responsive-item" controls>
+                                    <source src="preview.mov" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                    </div>
+            </div>
+            <div class="row justify-content-center" style="padding-bottom: 50px;">
+                <div style="text-align: center;" class="">
+                <a style="text-align: center;" href="https://testflight.apple.com/join/xshcaJsQ">Join the TestFlight↗</a>
+                <space>     |     </space>
+                <a style="text-align: center;" href="https://github.com/millerswiftdev/AquaQuest">View on GitHub↗</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="full-width-image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="ssc-logo.webp" class="img-ssc" alt="Description of image">
+                </div>
+                <div class="col-md-6">
+                    <h1>Apple Swift Student Challenge 2025</h1>
+                    <span class="status">Awaiting Results</span>
+                    <p>This is my first submission for the Apple Swift Student Challenge.</p>
+                    <a href="https://developer.apple.com/swift-student-challenge/">Learn More Here.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
