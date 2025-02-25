@@ -197,6 +197,7 @@ body {
     }
     body {
         overflow-x: hidden !important;
+        overflow-y: visible !important;
         max-height: none !important;
     }
     .desktop-home {
