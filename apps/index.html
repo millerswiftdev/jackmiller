@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../video.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../fonts-override.css">
+    <link rel="stylesheet" href="../appView.css">
 
     <script>
         window.transitionToPage = function (href) {
@@ -60,10 +61,13 @@
     <!-- Import the component -->
 
     <!-- Use it like any other HTML element -->
-    <model-viewer style="width: auto; height: 800px;"
+    <div class="app-title">
+        <h1 class="app-title">AquaQuest</h1>
+    </div>
+    <model-viewer class="obj-model"
         alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
         src="untitled2.glb" ar environment-image="spruit_sunrise_1k_HDR.hdr"
-        shadow-intensity="1" camera-controls
+        shadow-intensity="1"
         touch-action="pan-y" auto-rotate></model-viewer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
