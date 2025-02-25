@@ -196,8 +196,6 @@ body {
         display: block;
     }
     body {
-        overflow: visible !important;
-        max-height: none !important;
     }
     .desktop-home {
         display: none;
