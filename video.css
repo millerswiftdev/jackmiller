@@ -50,10 +50,11 @@ body {
     pointer-events: none;  
 
   
-    background: linear-gradient(90deg, #000000, #0c2ab1); /* Horizontal gold gradient */
+    background: linear-gradient(90deg, #1313136e, #8484843f); /* Horizontal gold gradient */
+    backdrop-filter: blur(20px); /* Add a blur effect */
     color: white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 800;
     padding: 12px 30px;
     border: none;
     border-radius: 205px;
@@ -189,4 +190,25 @@ body {
     }
 
 }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile-home {
+        display: none;
+    }
+    .desktop-home {
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .mobile-home {
+        display: block;
+    }
+    body {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+    .desktop-home {
+        display: none;
+    }
 }
