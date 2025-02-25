@@ -138,8 +138,9 @@
 
   .social-container {
     position: absolute;
-bottom: 70px;
-right: 25px;
+    bottom: 70px;
+    right: 25px;
+    padding: 0 15px !important;
   }
 
   .close-icon {
@@ -155,7 +156,7 @@ cursor: pointer;
   }
 
   .material-regular {
-    background-color: rgba(50, 50, 50, 0.799); /* Light translucent background */
+    background-color: rgba(25, 25, 25, 0.978); /* Light translucent background */
     backdrop-filter: blur(90px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     border-radius: 12px;
