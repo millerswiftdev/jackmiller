@@ -169,7 +169,7 @@ video {
     }
 
     /* When the container is hovered, apply changes to the explore div */
-    .explore-container1:hover .explore {
+    .explore-container1:hover .explore { 
         transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
         box-shadow: #0084e2 0px 0px 400px; /* Optional: add a shadow */
