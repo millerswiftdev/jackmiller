@@ -107,8 +107,8 @@ body {
 .status {
     display: inline-block;
     padding: 5px 10px;
-    background-color: rgba(255, 140, 0, 0.428);
-    color: black;
+    background-color: rgba(255, 4, 0, 0.428);
+    color: rgb(255, 255, 255);
     border-radius: 12px;
     font-size: 14px;
     font-weight: bold;
