@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
     background-color: rgb(238, 238, 238) !important;
     color: #ff4f00;
     margin: 0 !important;
