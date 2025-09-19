@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/override.css">
 </head>
   <body>
-      <div class="content-wrapper col-lg-5 col-md-10 col-sm-8 col-12">
+      <div class="content-wrapper col-xl-5 col-lg-10 col-md-10 col-sm-10 col-12">
         <div class="container-fluid">
           <div class="row gy-3">
             <div class="col-12">
@@ -20,9 +20,9 @@
                   <div class="col-6">
                     <div class="links glass-overlay d-flex align-items-center justify-content-end h-100">
                         <div>
-                          <a href="Home" class="me-3">home</a>
-                          <a href="Home" class="me-3">projects</a>
-                          <a href="Home">contact</a>
+                          <a href="Home" class="me-3">{home}</a>
+                          <a href="Home" class="me-3">{projects}</a>
+                          <a href="Home">{contact}</a>
                         </div>
                     </div>
                   </div>
@@ -30,76 +30,60 @@
             </div>
             
             <div class="col-12">
-              <div class="image-container">
-                <img class="glass-overlay" src="./images/hero-image-medium.png" alt="">
+              <div class="glass-overlay">
+                <div class="image-container hero-image" id=""></div>
               </div>
             </div>
 
             <div class="col-12">
               <div class="intro-body glass-overlay">
-                <p>I am a second year Computer Science student at the University of Utah. With skills in Java, Swift, Python, and others.</p>
+                <p>I am a second year Computer Science student at the University of Utah. With skills in Java, Swift, Python, and others.
+
+                  Outside of CS, I am skilled in Pro Audio Visial work, as well as Networking.
+                </p>
+              </div>
+            </div>
+
+            <!--Skill boxes-->
+
+            <div class="col-12">
+              <div class="row gx-3 gy-3">
+                <div class="col-md-6 col-sm-12">
+                  <div class="glass-overlay d-flex align-items-center skills-box" id="java">
+                    <h2 class="mb-0 skill-title">Java</h2>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="glass-overlay d-flex align-items-center skills-box" id="swift">
+                    <h2 class="mb-0 skill-title">Swift</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row gx-3 gy-3">
+                <div class="col-md-12 col-sm-12">
+                  <div class="glass-overlay d-flex align-items-center skills-box" id="av">
+                    <h2 class="mb-0 skill-title">Pro AV</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row gx-3 gy-3">
+                <div class="col-md-12 col-sm-12">
+                  <div class="glass-overlay d-flex align-items-center skills-box">
+                    <h2 class="mb-0 skill-title">Networking</h2>
+                  </div>
+                </div>
               </div>
             </div>
             
             <div class="col-12">
               <div class="glass-overlay skills-collection">
-        <div class="container-fluid">
-          <!-- Row 1: Swift (Left) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6">
-              <h3 class="skills">SWIFT</h3>
-            </div>
-            <div class="col-6"></div>
-          </div>
-          
-          <!-- Row 2: Java (Right) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6"></div>
-            <div class="col-6 text-end">
-              <h3 class="skills">JAVA</h3>
-            </div>
-          </div>
-          
-          <!-- Row 3: Python (Left) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6">
-              <h3 class="skills">PYTHON</h3>
-            </div>
-            <div class="col-6"></div>
-          </div>
-          
-          <!-- Row 4: JavaScript (Right) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6"></div>
-            <div class="col-6 text-end">
-              <h3 class="skills">JAVASCRIPT</h3>
-            </div>
-          </div>
-          
-          <!-- Row 5: HTML/CSS (Left) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6">
-              <h3 class="skills">HTML/CSS</h3>
-            </div>
-            <div class="col-6"></div>
-          </div>
-          
-          <!-- Row 6: Pro AV (Right) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6"></div>
-            <div class="col-6 text-end">
-              <h3 class="skills">PRO. AV</h3>
-            </div>
-          </div>
-          
-          <!-- Row 7: Networking (Left) -->
-          <div class="row align-items-center mb-3">
-            <div class="col-6">
-              <h3 class="skills">NETWORKING</h3>
-            </div>
-            <div class="col-6"></div>
-          </div>
-        </div>
+        
       </div>
             </div>
           </div>
