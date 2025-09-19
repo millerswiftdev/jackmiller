@@ -1,0 +1,179 @@
+@import url('../fonts/JetBrainsMono[wght].ttf');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+html {
+    background-color: rgb(184, 184, 184) !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: rgb(238, 238, 238) !important;
+    color: #ff4f00;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+}
+
+.titlebar {
+    color: #ff4f00;
+}
+
+.titlebar .glass-overlay {
+    min-height: 80px; /* Ensure both glass overlays have minimum height */
+}
+
+.titlebar h1, a {
+    padding: 10px;
+}
+
+.links {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.intro-body {
+    padding: 10px;
+    font-family: JetBrains Mono, monospace !important;
+}
+
+.skills {
+    font-size:80px;
+    font-family: 'Londrina Shadow', sans-serif !important;
+    font-weight: 900;
+    color: #ff4f00; /* Close to background color but slightly different for visibility */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Responsive font sizes for smaller devices */
+@media (max-width: 768px) {
+    .skills {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills {
+        font-size: 40px;
+    }
+}
+
+
+.skills:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Skills collection container */
+.skills-collection {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-image: url(../images/pexels-kaip-1341279.jpg);
+}
+
+/* Change background when any skill is hovered */
+.skills-collection:hover {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.content-wrapper {
+    
+    margin: 0 auto !important;
+    /*background-image: url(../images/pexels-kaip-1341279.jpg);*/
+    background-color: rgb(238, 238, 238) !important;
+    padding: 20px !important;
+    min-height: 100vh;
+    box-sizing: border-box !important;
+}
+
+/* Force all child elements to respect container boundaries */
+.content-wrapper * {
+}
+
+/* Prevent flexbox from extending beyond container */
+.content-wrapper .d-flex {
+    width: 100% !important;
+    flex-shrink: 1 !important;
+}
+
+/* Ensure images don't overflow */
+.content-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.titlebar a {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 100;
+    color: navy;
+    text-decoration: none;
+}
+
+/* Image container for glass effect */
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Sourced from GitHub CoPilot */
+/* Liquid glass overlay effect */
+.glass-overlay {
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    overflow: hidden; /* Clip content that extends beyond container */
+    
+    /* Light warping effect around edges */
+    &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, 
+            rgba(255, 255, 255, 0.3) 0%, 
+            transparent 20%, 
+            transparent 80%, 
+            rgba(255, 255, 255, 0.3) 100%);
+        border-radius: 22px;
+        z-index: -1;
+        filter: blur(3px);
+    }
+    
+    /* Additional light refraction effect */
+    &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        filter: blur(8px);
+        opacity: 0.6;
+    }
+}
