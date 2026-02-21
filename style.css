@@ -185,3 +185,36 @@ body {
   padding-right: .7rem !important;
 }
 
+.glass {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  padding: .6rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), inset 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+.glass-yellow {
+  color: white;
+  background: rgba(230, 180, 0, 0.461);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  padding: .4rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), inset 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+.glass-green {
+  color: white;
+  background: rgba(163, 255, 135, 0.15);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  padding: .6rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), inset 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.artwork {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
