@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaQuest | Jack Miller</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <link rel="stylesheet" href="/css-override.css">
+    <link rel="stylesheet" href="/navbar-override.css">
+    <link rel="stylesheet" href="/video.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fonts-override.css">
+    <link rel="stylesheet" href="appView.css">
+
+    <script>
+        window.transitionToPage = function (href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function () {
+                window.location.href = href
+            }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            document.querySelector('body').style.opacity = 1
+        });
+
+
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#header-desktop").load("/header-desktop.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+
+
+</head>
+
+<body style="background-color: black !important;">
+    <div class="" id="header"></div>
+    <div class="" id="header-desktop"></div>
+
+    <!-- <div class="alert alert-primary" role="alert" style="position: static;">
+        <p style="display: inline-block;" class="emoji">
+          🤫
+        </p>
+        <p style="display: inline-block;">Pardon the dust. New site under construction.</p>
+      </div> -->
+    <!-- Import the component -->
+
+    <!-- Use it like any other HTML element -->
+    <div class="" style="">
+    
+    <video src="animoji.mov" autoplay loop muted class="app-video"></video>
+    <div class="" style="margin-bottom: 100px;">
+        <h1 class="canopy-title">Canopy</h1>
+    </div>
+    <div class="row" style="max-width: 1200px; margin-left: auto; margin-right: auto;">
+        <div class="full-width-image">
+        <div class="container" style="padding: 50px 0;">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="ssc-logo.webp" class="img-ssc" alt="Description of image">
+                </div>
+                <div class="col-md-7">
+                    <h1>Apple Swift Student Challenge 2026</h1>
+                    <span class="status glass-yellow">AWAITING RESULTS</span>
+                    <p>This is my second time applying for the Apple Swift Student Challenge.</p>
+                    <a class="" href="https://developer.apple.com/swift-student-challenge/">Learn More Here↗</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row justify-content-center" style="text-align: center; padding: 20px; max-width: 500px; margin-left: auto; margin-right: auto; color: lightgrey;">
+            <H5>Based on the backings and experience of ADHD, ideas often get lost during a brainstorm due to the sheer volume and speed they come at you.</H5>
+            <h5>Just simply speak whatever comes to mind and build a "Canopy" of your ideas!</h5>
+            <h5>Reorganize your thoughts into different categories, add drawings, add photos, and sub-ideas until you find the perfect one.</h5>
+        </div>
+
+    </div>
+        <div class="row justify-content-center" style="width: 100vw; display: ; margin-left: auto; margin-right: auto; padding: 50px 50px;">
+            <img class="artwork" src="screenshots/2.png" alt="">
+            <img class="artwork" src="screenshots/3.png" alt="">
+            <img class="artwork" src="screenshots/4.png" alt="">
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <h2 style="text-align: center; padding-bottom: 15px;">Watch Preview</h2>
+                                <video class="embed-responsive-item" style="max-width: 800px;" controls>
+                                    <source src="preview.MOV" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                    </div>
+            </div>
+            <div class="row justify-content-center" style="padding-bottom: 50px;">
+                <div style="text-align: center;" class="">
+                <a style="text-align: center;" href="">Github Repo Coming Soon</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="disclaimer">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <p class="disclaimer-p">Disclaimer: Apple, the Apple logo, Swift, and Swift Student Challenge are trademarks of Apple Inc., registered in the U.S. and other countries. This website is not affiliated with, endorsed by, or sponsored by Apple Inc. WWDC25 background image is property of Apple Inc.</p>
+            </div>
+        </div>
+        </div>
+
+    
+    
+
+    <footer id="footer"></footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+ 
+
+</html>

@@ -214,7 +214,26 @@ body {
 }
 
 .artwork {
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+}
+
+.app-card {
+  height: 250px;
+  align-items: center;
+  vertical-align: middle;
+  background-size: cover;
+  width: 50vw;
+  height: 80vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(63, 63, 63, 0.908);
+  background-blend-mode: multiply;
+}
+.app-card h1 {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
