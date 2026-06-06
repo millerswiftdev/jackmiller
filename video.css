@@ -1,3 +1,7 @@
+.body {
+    background-color: black !important;
+}
+
 .video-container {
     height: 100%;
     width: 100%;
@@ -50,7 +54,7 @@ body {
     pointer-events: none;  
 
     color: white;
-    font-weight: 200 !important;
+    font-weight: 600 !important;
     
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -103,8 +107,6 @@ body {
     
 }
 .explore-container2 {
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
     height: 100%;
     align-content: center;
     display: flex;
@@ -112,8 +114,16 @@ body {
     align-items: center;
     position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
     transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
-    
+    flex: 1;
 }
+
+.explore-mobile {
+    display: flex;
+    gap: 15px 0px; /* row-gap column-gap */
+    flex-direction: column;
+    height: 80vh;
+}
+
 .explore-container3 {
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -140,6 +150,7 @@ body {
     position: absolute;
     z-index: 50;
     transition: 0.3s cubic-bezier(0.71, 0.19, 0.46, 0.96);
+    filter: brightness(0.5);
 }
 
 @media screen and (min-height: 600px) {
