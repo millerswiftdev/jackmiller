@@ -170,19 +170,13 @@ body {
     /* When the container is hovered, apply changes to the explore div */
     .explore-container1:hover .explore { 
         transform: scaleY(4.5);
-    box-shadow:
-        -55px 0px 18px 4px #61BB46,   /* green — left */
-        -33px 0px 14px 3px #FDB827,   /* yellow */
-        -11px 0px 12px 3px #F5821F,   /* orange */
-         11px 0px 14px 3px #E03A3E,   /* red */
-         33px 0px 16px 4px #963D97,   /* purple */
-         55px 0px 20px 5px #009DDC;  /* green — right */
+    box-shadow: #0095ff 0px 0px 400px;
     transition-delay: .1s;
     }
     .explore-container2:hover .explore {
         transform: scaleY(4.5); /* Optional: vertical scaling effect */
         /* height: 200px; */
-        box-shadow: #5500ff 0px 0px 400px; /* Optional: add a shadow */
+        box-shadow: #00a6ff 0px 0px 400px; /* Optional: add a shadow */
         transition-delay:.1s;
     }
     .explore-container3:hover .explore {
