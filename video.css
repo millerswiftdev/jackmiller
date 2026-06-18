@@ -3,11 +3,14 @@
 }
 
 .video-container {
+    padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
     height: 100%;
     width: 100%;
     position: relative;
     height: calc(100vh - 86px);
-    background-color: black;
 }
 
 body {
@@ -20,7 +23,7 @@ body {
     width: 100%;
     height: 100%;
     align-content: center;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -166,10 +169,15 @@ body {
 
     /* When the container is hovered, apply changes to the explore div */
     .explore-container1:hover .explore { 
-        transform: scaleY(4.5); /* Optional: vertical scaling effect */
-        /* height: 200px; */
-        box-shadow: #0084e2 0px 0px 400px; /* Optional: add a shadow */
-        transition-delay:.1s;
+        transform: scaleY(4.5);
+    box-shadow:
+        -55px 0px 18px 4px #61BB46,   /* green — left */
+        -33px 0px 14px 3px #FDB827,   /* yellow */
+        -11px 0px 12px 3px #F5821F,   /* orange */
+         11px 0px 14px 3px #E03A3E,   /* red */
+         33px 0px 16px 4px #963D97,   /* purple */
+         55px 0px 20px 5px #009DDC;  /* green — right */
+    transition-delay: .1s;
     }
     .explore-container2:hover .explore {
         transform: scaleY(4.5); /* Optional: vertical scaling effect */
@@ -197,10 +205,13 @@ body {
 
 @media screen and (min-width: 1000px) {
     .mobile-home {
-        display: none;
+        display: block;
     }
     .desktop-home {
-        display: block;
+        display: none;
+    }
+    body {
+        overflow-y: visible !important;
     }
 }
 @media screen and (max-width: 1000px) {
